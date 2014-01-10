@@ -1,0 +1,105 @@
+﻿Build started 9/1/2014 5:34:05 PM.
+     1>Project "C:\Users\Johan.Vu\Desktop\PTAMM\CameraCalibrator.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\CameraCalibrator.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include" /I"C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\1394camera" /Zi /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ATANCamera.cc CalibCornerPatch.cc CalibImage.cc CameraCalibrator.cc GLWindow2.cc GLWindowMenu.cc VideoSource_Win32_LibVideoInput.cc
+         ATANCamera.cc
+         CalibCornerPatch.cc
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\cvd/image_interpolate.h(187): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+                 C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\cvd/image_interpolate.h(173) : while compiling class template member function 'float CVD::image_interpolate<I,C>::operator [](const TooN::Vector<Size> &) const'
+                 with
+                 [
+                     I=CVD::Interpolate::Bilinear,
+                     C=CVD::byte,
+                     Size=2
+                 ]
+                 CalibCornerPatch.cc(143) : see reference to class template instantiation 'CVD::image_interpolate<I,C>' being compiled
+                 with
+                 [
+                     I=CVD::Interpolate::Bilinear,
+                     C=CVD::byte
+                 ]
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\cvd/image_interpolate.h(190): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\cvd/image_interpolate.h(193): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\cvd/image_interpolate.h(196): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         CalibImage.cc
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\TooN/so3.h(57): warning C4396: 'TooN::operator >>' : the inline specifier cannot be used when a friend declaration refers to a specialization of a function template
+                 C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\TooN/se3.h(160) : see reference to class template instantiation 'TooN::SO3<Precision>' being compiled
+                 with
+                 [
+                     Precision=TooN::DefaultPrecision
+                 ]
+                 c:\users\johan.vu\desktop\ptamm\CalibImage.h(41) : see reference to class template instantiation 'TooN::SE3<>' being compiled
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\TooN/so3.h(58): warning C4396: 'TooN::operator >>' : the inline specifier cannot be used when a friend declaration refers to a specialization of a function template
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\TooN/so3.h(59): warning C4396: 'TooN::operator >>' : the inline specifier cannot be used when a friend declaration refers to a specialization of a function template
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\cvd/image_interpolate.h(187): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+                 C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\cvd/image_interpolate.h(173) : while compiling class template member function 'float CVD::image_interpolate<I,C>::operator [](const TooN::Vector<Size> &) const'
+                 with
+                 [
+                     I=CVD::Interpolate::Bilinear,
+                     C=CVD::byte,
+                     Size=2
+                 ]
+                 CalibImage.cc(79) : see reference to class template instantiation 'CVD::image_interpolate<I,C>' being compiled
+                 with
+                 [
+                     I=CVD::Interpolate::Bilinear,
+                     C=CVD::byte
+                 ]
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\cvd/image_interpolate.h(190): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\cvd/image_interpolate.h(193): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\cvd/image_interpolate.h(196): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         CameraCalibrator.cc
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\TooN/so3.h(57): warning C4396: 'TooN::operator >>' : the inline specifier cannot be used when a friend declaration refers to a specialization of a function template
+                 C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\TooN/se3.h(160) : see reference to class template instantiation 'TooN::SO3<Precision>' being compiled
+                 with
+                 [
+                     Precision=TooN::DefaultPrecision
+                 ]
+                 c:\users\johan.vu\desktop\ptamm\CalibImage.h(41) : see reference to class template instantiation 'TooN::SE3<>' being compiled
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\TooN/so3.h(58): warning C4396: 'TooN::operator >>' : the inline specifier cannot be used when a friend declaration refers to a specialization of a function template
+     1>C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include\TooN/so3.h(59): warning C4396: 'TooN::operator >>' : the inline specifier cannot be used when a friend declaration refers to a specialization of a function template
+         GLWindow2.cc
+         GLWindowMenu.cc
+         VideoSource_Win32_LibVideoInput.cc
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Johan.Vu\Desktop\PTAMM\Release\CameraCalibrator.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\Release\lib" libcvd_MD.lib "gvars3-headless.lib" glew32.lib opengl32.lib 1394camera.lib libblas.lib liblapack.lib pthreadVCE2.lib videoInput.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:atlthunk.lib /MANIFEST /ManifestFile:"Release\CameraCalibrator.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Johan.Vu\Desktop\PTAMM\Release\CameraCalibrator.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Johan.Vu\Desktop\PTAMM\Release\CameraCalibrator.lib" /MACHINE:X86 Release\ATANCamera.obj
+         Release\CalibCornerPatch.obj
+         Release\CalibImage.obj
+         Release\CameraCalibrator.obj
+         Release\GLWindow2.obj
+         Release\GLWindowMenu.obj
+         Release\VideoSource_Win32_LibVideoInput.obj
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Generating code
+     1>c:\users\johan.vu\desktop\gvars-master\src\gui.cc(37): warning C4700: uninitialized local variable 'temp' used
+     1>c:\users\johan.vu\desktop\gvars-master\src\gui.cc(756): warning C4700: uninitialized local variable 'temp' used
+         Finished generating code
+     1>ATANCamera.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'ATANCamera.obj' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>CalibCornerPatch.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'CalibCornerPatch.obj' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>CalibImage.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'CalibImage.obj' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>CameraCalibrator.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'CameraCalibrator.obj' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>GLWindow2.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'GLWindow2.obj' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>GLWindowMenu.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'GLWindowMenu.obj' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>VideoSource_Win32_LibVideoInput.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'VideoSource_Win32_LibVideoInput.obj' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>libcvd_MD.lib(convolution.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcvd_MD.lib(convolution.obj)' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>libcvd_MD.lib(fast_corner.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcvd_MD.lib(fast_corner.obj)' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>libcvd_MD.lib(gltext.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcvd_MD.lib(gltext.obj)' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>libcvd_MD.lib(nonmax_suppression.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcvd_MD.lib(nonmax_suppression.obj)' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>libcvd_MD.lib(convolve_gaussian.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcvd_MD.lib(convolve_gaussian.obj)' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>libcvd_MD.lib(utility_float.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcvd_MD.lib(utility_float.obj)' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>libcvd_MD.lib(glwindow.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcvd_MD.lib(glwindow.obj)' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>libcvd_MD.lib(win32.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcvd_MD.lib(win32.obj)' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc100.pdb'; linking object as if no debug info
+     1>videoInput.lib(videoInput.obj) : warning LNK4099: PDB 'vc80.pdb' was not found with 'videoInput.lib(videoInput.obj)' or at 'C:\Users\Johan.Vu\Desktop\PTAMM\Release\vc80.pdb'; linking object as if no debug info
+         CameraCalibrator.vcxproj -> C:\Users\Johan.Vu\Desktop\PTAMM\Release\CameraCalibrator.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Johan.Vu\Desktop\PTAMM\Release\CameraCalibrator.exe;#1" /manifest Release\CameraCalibrator.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\CameraCalibrator.unsuccessfulbuild".
+         Touching "Release\CameraCalibrator.lastbuildstate".
+     1>Done Building Project "C:\Users\Johan.Vu\Desktop\PTAMM\CameraCalibrator.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:21.74

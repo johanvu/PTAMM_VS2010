@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6E40617-4EC6-4644-AEF5-BDA9BA0A9C09}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcvdd.lib;gvars3d.lib;GlU32.Lib;glew32.lib;opengl32.lib;1394camerad.lib;blas_win32_MT.lib;lapack_win32_MT.lib;pthreadVCE2.lib;jpeg.lib;libpng.lib;lib3ds-2_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ENABLE_MODELS_GAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcvd.lib;gvars3.lib;GlU32.Lib;glew32.lib;opengl32.lib;1394camera.lib;blas_win32_MT.lib;lapack_win32_MT.lib;pthreadVCE2.lib;jpeg.lib;libpng.lib;lib3ds-2_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ARDriver.h" />
+    <ClInclude Include="ATANCamera.h" />
+    <ClInclude Include="Bundle.h" />
+    <ClInclude Include="EyeGame.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Games.h" />
+    <ClInclude Include="GLWindow2.h" />
+    <ClInclude Include="GLWindowMenu.h" />
+    <ClInclude Include="HomographyInit.h" />
+    <ClInclude Include="KeyFrame.h" />
+    <ClInclude Include="LapackCholesky.h" />
+    <ClInclude Include="LevelHelpers.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="MapLockManager.h" />
+    <ClInclude Include="MapMaker.h" />
+    <ClInclude Include="MapPoint.h" />
+    <ClInclude Include="MapSerializer.h" />
+    <ClInclude Include="MapViewer.h" />
+    <ClInclude Include="MD5.h" />
+    <ClInclude Include="MD5Wrapper.h" />
+    <ClInclude Include="MEstimator.h" />
+    <ClInclude Include="MGButton.h" />
+    <ClInclude Include="MiniPatch.h" />
+    <ClInclude Include="Model3ds.h" />
+    <ClInclude Include="ModelBrowser.h" />
+    <ClInclude Include="ModelControls.h" />
+    <ClInclude Include="ModelsGame.h" />
+    <ClInclude Include="ModelsGameData.h" />
+    <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="PatchFinder.h" />
+    <ClInclude Include="Relocaliser.h" />
+    <ClInclude Include="ShiTomasi.h" />
+    <ClInclude Include="ShooterGame.h" />
+    <ClInclude Include="ShooterGameTarget.h" />
+    <ClInclude Include="SmallBlurryImage.h" />
+    <ClInclude Include="SmallMatrixOpts.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="tinyxml.h" />
+    <ClInclude Include="Tracker.h" />
+    <ClInclude Include="TrackerData.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="VideoSource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ARDriver.cc" />
+    <ClCompile Include="ATANCamera.cc" />
+    <ClCompile Include="Bundle.cc" />
+    <ClCompile Include="EyeGame.cc" />
+    <ClCompile Include="Games.cc" />
+    <ClCompile Include="GLWindow2.cc" />
+    <ClCompile Include="GLWindowMenu.cc" />
+    <ClCompile Include="HomographyInit.cc" />
+    <ClCompile Include="KeyFrame.cc" />
+    <ClCompile Include="main.cc" />
+    <ClCompile Include="Map.cc" />
+    <ClCompile Include="MapLockManager.cc" />
+    <ClCompile Include="MapMaker.cc" />
+    <ClCompile Include="MapPoint.cc" />
+    <ClCompile Include="MapSerializer.cc" />
+    <ClCompile Include="MapViewer.cc" />
+    <ClCompile Include="MD5.cc" />
+    <ClCompile Include="MD5Wrapper.cc" />
+    <ClCompile Include="MGButton.cc" />
+    <ClCompile Include="MiniPatch.cc" />
+    <ClCompile Include="Model3ds.cc" />
+    <ClCompile Include="ModelBrowser.cc" />
+    <ClCompile Include="ModelControls.cc" />
+    <ClCompile Include="ModelsGame.cc" />
+    <ClCompile Include="ModelsGameData.cc" />
+    <ClCompile Include="PatchFinder.cc" />
+    <ClCompile Include="Relocaliser.cc" />
+    <ClCompile Include="ShiTomasi.cc" />
+    <ClCompile Include="ShooterGame.cc" />
+    <ClCompile Include="ShooterGameTarget.cc" />
+    <ClCompile Include="SmallBlurryImage.cc" />
+    <ClCompile Include="System.cc" />
+    <ClCompile Include="tinyxml.cc" />
+    <ClCompile Include="tinyxmlerror.cc" />
+    <ClCompile Include="tinyxmlparser.cc" />
+    <ClCompile Include="Tracker.cc" />
+    <ClCompile Include="Utils.cc" />
+    <ClCompile Include="VideoSource_Win32_CMU1394.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

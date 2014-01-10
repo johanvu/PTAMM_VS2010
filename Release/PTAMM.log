@@ -1,0 +1,20 @@
+﻿Build started 9/1/2014 5:50:13 PM.
+     1>Project "C:\Users\Johan.Vu\Desktop\PTAMM\PTAMM.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\PTAMM.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Release\PTAMM.unsuccessfulbuild".
+         Touching "Release\PTAMM.lastbuildstate".
+     1>Done Building Project "C:\Users\Johan.Vu\Desktop\PTAMM\PTAMM.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.14

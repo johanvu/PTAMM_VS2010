@@ -1,0 +1,25 @@
+﻿Build started 9/1/2014 4:08:37 PM.
+     1>Project "C:\Users\Johan.Vu\Desktop\PTAMM\Build\Win32\CameraCalibrator.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\CameraCalibrator.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Johan.Vu\Desktop\PTAM 3rd library\all components libraries\include" /Zi /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ATANCamera.cc CalibCornerPatch.cc CalibImage.cc CameraCalibrator.cc GLWindow2.cc GLWindowMenu.cc VideoSource_Win32_CMU1394.cc
+         ATANCamera.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'ATANCamera.cc': No such file or directory
+         CalibCornerPatch.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'CalibCornerPatch.cc': No such file or directory
+         CalibImage.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'CalibImage.cc': No such file or directory
+         CameraCalibrator.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'CameraCalibrator.cc': No such file or directory
+         GLWindow2.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'GLWindow2.cc': No such file or directory
+         GLWindowMenu.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'GLWindowMenu.cc': No such file or directory
+         VideoSource_Win32_CMU1394.cc
+     1>VideoSource_Win32_CMU1394.cc(7): fatal error C1083: Cannot open include file: 'VideoSource.h': No such file or directory
+     1>Done Building Project "C:\Users\Johan.Vu\Desktop\PTAMM\Build\Win32\CameraCalibrator.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.61
